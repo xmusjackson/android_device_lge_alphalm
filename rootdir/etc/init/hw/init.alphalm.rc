@@ -6,6 +6,7 @@ import /vendor/etc/init/hw/init.qcom.rc
 # to override init.qcom.rc and init.target.rc
 import /vendor/etc/init/hw/init.lge.usb.rc
 import /vendor/etc/init/hw/init.lge.usb.configfs.rc
+import /vendor/etc/init/hw/init.lge.power.rc
 import /vendor/etc/init/hw/init.lge.sensors.rc
 import /vendor/etc/init/hw/init.lge.fingerprints.rc
 import /vendor/etc/init/hw/init.lge.display.rc
@@ -15,5 +16,3 @@ import /vendor/etc/init/hw/init.msmnile.rc
 
 on post-fs
     mkdir /mnt/vendor/persist-lg/tof 0776 system camera
-
-

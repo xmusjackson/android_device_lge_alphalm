@@ -20,29 +20,37 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
 $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_p.mk)
 
-# Inherit from flashlmdd device
-$(call inherit-product, device/lge/flashlmdd/device.mk)
+# Inherit from alphalm device
+$(call inherit-product, device/lge/alphalm/device.mk)
 
 # Inherit some common Lineage stuff.
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
 # Device identifiers
 
-PRODUCT_NAME := lineage_flashlmdd
-PRODUCT_DEVICE := flashlmdd
+PRODUCT_NAME := lineage_alphalm
+PRODUCT_DEVICE := alphalm# import $(TARGET_PRODUCT) vendor rc file
+import /vendor/etc/init/hw/init.${ro.hardware}_vendor.rc
+
+# Begin Immersion Changes
+service immvibed /vendor/bin/immvibed -p 99 -u 1000
+    class late_start
+    user root
+    group root
+    ioprio rt 4
 PRODUCT_BRAND := lge
 PRODUCT_MANUFACTURER := LGE
-PRODUCT_RELEASE_NAME := V50 ThinQ
-PRODUCT_MODEL := LM-V500
+PRODUCT_RELEASE_NAME := G8 ThinQ
+PRODUCT_MODEL := LM-G820
 
 PRODUCT_GMS_CLIENTID_BASE := android-lge
 
-TARGET_VENDOR_PRODUCT_NAME := flashlmdd_lao_com
-TARGET_VENDOR_DEVICE_NAME := flashlmdd
+TARGET_VENDOR_PRODUCT_NAME := alphalm_lao_com
+TARGET_VENDOR_DEVICE_NAME := alphalm
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    PRODUCT_NAME="flashlmdd_lao_com" \
-    PRIVATE_BUILD_DESC="flashlmdd_lao_com-user 10 QKQ1.191021.002 210771107e0c8 release-keys"
+    PRODUCT_NAME="alphalm_lao_com" \
+    PRIVATE_BUILD_DESC="alphalm_lao_com-user 10 QKQ1.191021.002 202480518b6a5 release-keys"
 
-BUILD_FINGERPRINT := "lge/flashlmdd_lao_com/flashlmdd:10/QKQ1.191021.002/210771107e0c8:user/release-keys"
+BUILD_FINGERPRINT := "lge/alphalm_lao_com/alphalm:10/QKQ1.190929.002/210471639d08f:user/release-keys"
 
