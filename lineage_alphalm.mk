@@ -30,14 +30,6 @@ $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
 PRODUCT_NAME := lineage_alphalm
 PRODUCT_DEVICE := alphalm# import $(TARGET_PRODUCT) vendor rc file
-import /vendor/etc/init/hw/init.${ro.hardware}_vendor.rc
-
-# Begin Immersion Changes
-service immvibed /vendor/bin/immvibed -p 99 -u 1000
-    class late_start
-    user root
-    group root
-    ioprio rt 4
 PRODUCT_BRAND := lge
 PRODUCT_MANUFACTURER := LGE
 PRODUCT_RELEASE_NAME := G8 ThinQ
