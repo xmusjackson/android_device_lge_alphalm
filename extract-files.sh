@@ -71,7 +71,7 @@ function blob_fixup() {
 }
 
 if [ -z "$SRC" ]; then
-    SRC=adb
+    SRC=/mnt/vendor_img
 fi
 
 # Initialize the helper
