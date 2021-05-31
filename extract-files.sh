@@ -71,7 +71,7 @@ function blob_fixup() {
 }
 
 if [ -z "$SRC" ]; then
-    SRC=/mnt/vendor_img
+    SRC=/mnt/proprietary
 fi
 
 # Initialize the helper
