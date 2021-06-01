@@ -21,6 +21,7 @@ DEVICE_PATH := device/lge/alphalm
 
 # Kernel
 BOARD_KERNEL_CMDLINE += androidboot.hardware=alphalm
+BOARD_KERNEL_CMDLINE += androidboot.selinux=permissive
 
 # Recovery
 TARGET_RECOVERY_WIPE := $(DEVICE_PATH)/recovery/recovery.wipe
