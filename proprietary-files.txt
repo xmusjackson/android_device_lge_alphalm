@@ -250,6 +250,7 @@ vendor/lib64/libFNCVFD.so
 vendor/lib64/libFNCVFFD.so
 vendor/lib64/libFNCVMeshGen.so
 vendor/lib64/libFNCVSegmentation.so
+vendor/lib64/libFN3DPortrait.so
 vendor/lib64/libimagerwrapper.so
 vendor/lib64/libSRIyuv.so
 vendor/lib64/libc++_shared_snpe.so
