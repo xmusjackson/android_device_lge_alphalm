@@ -149,6 +149,7 @@ vendor/lib/camera/liblg_awb_param_s5k3m5tb_preview.so
 vendor/lib/camera/liblg_awb_param_s5k3m5tb_video.so
 vendor/lib/lib.com.lge.elvis.so
 vendor/lib/libSNPE.so
+vendor/lib/libimagerwrapper.so
 vendor/lib/libeepromcutter.so
 vendor/lib/libFNCVCore.so
 vendor/lib/libFNCVFD.so
