@@ -16,7 +16,7 @@
 
 DEVICE_PATH := device/lge/alphalm
 
-# inherit from common v50
+# inherit from common alpha
 -include device/lge/alpha-common/BoardConfigCommon.mk
 
 # Kernel
