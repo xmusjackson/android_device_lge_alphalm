@@ -24,11 +24,11 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_p.mk)
 $(call inherit-product, device/lge/alphalm/device.mk)
 
 # Inherit some common Lineage stuff.
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+$(call inherit-product, vendor/exthm/config/common_full_phone.mk)
 
 # Device identifiers
 
-PRODUCT_NAME := lineage_alphalm
+PRODUCT_NAME := exthm_alphalm
 PRODUCT_DEVICE := alphalm# import $(TARGET_PRODUCT) vendor rc file
 PRODUCT_BRAND := lge
 PRODUCT_MANUFACTURER := LGE
